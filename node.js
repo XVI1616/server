@@ -22,8 +22,8 @@ function sendEmail(ip) {
   });
 
   const mailOptions = {
-    from: "",
-    to: "",
+    from: process.env.EMAIL_USER,
+    to: process.env.EMAIL_USER,
     subject: "New visitor on my site)",
     text: `Ip adress: ${ip}`,
   };
