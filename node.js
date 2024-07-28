@@ -16,14 +16,14 @@ function sendEmail(ip) {
   const transporter = nodemailer.createTransport({
     service: "yandex",
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASSWORD,
+      user: 'zqwe821@yandex.ru',
+      pass: 'Sasha21102007',
     },
   });
 
   const mailOptions = {
-    from: process.env.EMAIL_USER,
-    to: process.env.EMAIL_USER,
+    from: 'zqwe821@yandex.ru',
+    to: 'zqwe821@yandex.ru',
     subject: "New visitor on my site)",
     text: `Ip adress: ${ip}`,
   };
