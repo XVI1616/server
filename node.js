@@ -11,7 +11,7 @@ const server = http.createServer((req, res) => {
 server.listen(3000, () => {
   console.log("port 3000");
 });
-require("dotenv".config());
+require("dotenv").config();
 function sendEmail(ip) {
   const transporter = nodemailer.createTransport({
     service: "gmail",
