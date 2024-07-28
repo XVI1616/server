@@ -14,7 +14,7 @@ server.listen(3000, () => {
 require("dotenv").config();
 function sendEmail(ip) {
   const transporter = nodemailer.createTransport({
-    service: "gmail",
+    service: "yandex",
     auth: {
       user: process.env.EMAIL_USER,
       pass: process.env.EMAIL_PASSWORD,
