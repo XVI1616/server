@@ -14,7 +14,7 @@ server.listen(3000, () => {
 require("dotenv").config();
 function sendEmail(ip) {
   const transporter = nodemailer.createTransport({
-    host: "sntp.mail.ru",
+    host: "smtp.yandex.ru",
     port: 465,
     secure: true,
     auth: {
